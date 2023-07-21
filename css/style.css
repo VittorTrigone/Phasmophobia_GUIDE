@@ -1,0 +1,15 @@
+#texto-interativo {
+    cursor: pointer;
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+}
+
+.riscado {
+    text-decoration: line-through;
+}
+
+.highlight {
+    background-color: rgb(255, 0, 0);
+}
