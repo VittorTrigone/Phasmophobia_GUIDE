@@ -1,4 +1,4 @@
-#texto-interativo {
+.block {
     cursor: pointer;
     user-select: none;
     -webkit-user-select: none;
@@ -8,8 +8,32 @@
 
 .riscado {
     text-decoration: line-through;
+    opacity: 40%;
 }
+
+.circulado {
+    font-size: 24px;
+    font-weight: bold;
+    color: #ff0000;
+    /* Cor do texto */
+    text-shadow:
+        -1px -1px 0 #000,
+        /* Sombra superior esquerda (preta) */
+        1px -1px 0 #000,
+        /* Sombra superior direita (preta) */
+        -1px 1px 0 #000,
+        /* Sombra inferior esquerda (preta) */
+        1px 1px 0 #000;
+    /* Sombra inferior direita (preta) */
+
+}
+
 
 .highlight {
     background-color: rgb(255, 0, 0);
+}
+
+.custom-checkbox {
+    width: 27px;
+    height: 27px;
 }

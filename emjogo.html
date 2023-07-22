@@ -1,24 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Phasmo</title>
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
-            integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-            integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-            crossorigin="anonymous"></script>
-            <link rel="stylesheet" href="css/style.css">
-    </head>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phasmo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+        integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+        integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+        crossorigin="anonymous"></script>
+    <script type="text/javascript" src="js/SistemaDeEvidencias.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
 <body>
     <nav class="navbar navbar-light bg-light">
         <div class="container-fluid">
             <div>
-            <a class="navbar-brand">Phasmophobia</a>
-            <a href="index.html" class="btn btn-outline-success">Fantasmas</a>
-            <a href="emjogo.html" class="btn btn-outline-success">Em jogo</a>
-        </div>
+                <a class="navbar-brand">Phasmophobia</a>
+                <a href="index.html" class="btn btn-outline-success">Fantasmas</a>
+                <a href="emjogo.html" class="btn btn-outline-success">Em jogo</a>
+            </div>
             <form class="d-flex">
                 <input class="form-control me-2" type="search" placeholder="Digite sua pesquisa..." aria-label="Search"
                     id="searchInput">
@@ -26,17 +35,230 @@
             </form>
         </div>
     </nav>
-    <p id="texto-interativo" onclick="riscarTexto()" unselectable="on">Este é um texto interativo. Clique para riscar!</p>
+
+    <div style="max-width: 40%; min-width: 40%;" class="border border-dark p-4">
+        <div>
+            <div class="text-center mb-4">
+                <h1>Evidências</h1>
+            </div>
+            <div class="d-flex justify-content-center">
+                <div style="background-color: black; width: 90%; height: 3px;"></div>
+            </div>
+            <div class="d-flex flex-row justify-content-evenly">
+                <div class="d-flex flex-column mt-4 mb-4">
+                    <div>
+                        <input class="form-check-input custom-checkbox" type="checkbox"
+                            data-textos-alvo="Phantom Poltergeist Banshee Mare Revenant Demon Yurei Youkai Hantu Onryo Mimico Moroi Deogen Thaye">
+                        <label class="form-check-label block">
+                            <h3>EMF Nível 5</h3>
+                        </label>
+                    </div>
+                    <div>
+                        <input class="form-check-input custom-checkbox" type="checkbox"
+                            data-textos-alvo="Spirit Wraith Mare Revenant Shade Yurei Oni Youkai Onryo TheTwins Moroi Deogen Thaye">
+                        <label class="form-check-label block">
+                            <h3>Impressões Digitais</h3>
+                        </label>
+                    </div>
+                    <div>
+                        <input class="form-check-input custom-checkbox" type="checkbox"
+                            data-textos-alvo="Wraith Phantom Banshee Jinn Yurei Oni Youkai Hantu Goryo Onryo TheTwins Raiju Obake Mimico">
+                        <label class="form-check-label block">
+                            <h3>Escrita Fantasma</h3>
+                        </label>
+                    </div>
+                    <div>
+                        <input class="form-check-input custom-checkbox" type="checkbox"
+                            data-textos-alvo="Spirit Wraith Phantom Poltergeist Banshee Mare Youkai Goryo Myling Raiju Obake Deogen Thaye">
+                        <label class="form-check-label block">
+                            <h3>Temperatura Baixa</h3>
+                        </label>
+                    </div>
+                </div>
+                <div class="d-flex flex-column mt-4">
+                    <div>
+                        <input class="form-check-input custom-checkbox" type="checkbox"
+                            data-textos-alvo="Spirit Poltergeist Jinn Mare Revenant Shade Demon Hantu Myling Onryo TheTwins Obake Mimico Moroi">
+                        <label class="form-check-label block">
+                            <h3>Projetor D.O.T.S</h3>
+                        </label>
+                    </div>
+                    <div>
+                        <input class="form-check-input custom-checkbox" type="checkbox"
+                            data-textos-alvo="Spirit Wraith Phantom Poltergeist Jinn Shade Demon Oni Goryo Myling TheTwins Mimico Moroi Deogen">
+                        <label class="form-check-label block">
+                            <h3>Orbe Fantasma</h3>
+                        </label>
+                    </div>
+                    <div>
+                        <input class="form-check-input custom-checkbox" type="checkbox"
+                            data-textos-alvo="Banshee Jinn Revenant Shade Demon Yurei Oni Hantu Goryo Myling Raiju Obake Thaye">
+                        <label class="form-check-label block">
+                            <h3>Spirit Box</h3>
+                        </label>
+                    </div>
+                </div>
+            </div>
+            <div class="d-flex justify-content-center">
+                <div style="background-color: black; width: 90%; height: 3px;"></div>
+            </div>
+            <div class="text-center mt-4 mb-4">
+                <h1>Fantasmas</h1>
+            </div>
+            <div class="d-flex justify-content-evenly text-center">
+                <div class="column-container">
+                    <h4 class="block texto-interativo" onclick="riscarOuCircundarTexto(event)" id="Spirit"
+                        unselectable="on">Spirit</h4>
+                    <h4 class="block texto-interativo" onclick="riscarOuCircundarTexto(event)" id="Poltergeist"
+                        unselectable="on">Poltergeist</h4>
+                    <h4 class="block texto-interativo" onclick="riscarOuCircundarTexto(event)" id="Mare"
+                        unselectable="on">Mare</h4>
+                    <h4 class="block texto-interativo" onclick="riscarOuCircundarTexto(event)" id="Demon"
+                        unselectable="on">Demon</h4>
+                    <h4 class="block texto-interativo" onclick="riscarOuCircundarTexto(event)" id="Youkai"
+                        unselectable="on">Youkai</h4>
+                    <h4 class="block texto-interativo" onclick="riscarOuCircundarTexto(event)" id="Myling"
+                        unselectable="on">Myling</h4>
+                    <h4 class="block texto-interativo" onclick="riscarOuCircundarTexto(event)" id="Raiju"
+                        unselectable="on">Raiju</h4>
+                    <h4 class="block texto-interativo" onclick="riscarOuCircundarTexto(event)" id="Moroi"
+                        unselectable="on">Moroi</h4>
+                </div>
+                <div class="column-container">
+                    <h4 class="block texto-interativo" onclick="riscarOuCircundarTexto(event)" id="Wraith"
+                        unselectable="on">Wraith</h4>
+                    <h4 class="block texto-interativo" onclick="riscarOuCircundarTexto(event)" id="Banshee"
+                        unselectable="on">Banshee</h4>
+                    <h4 class="block texto-interativo" onclick="riscarOuCircundarTexto(event)" id="Revenant"
+                        unselectable="on">Revenant</h4>
+                    <h4 class="block texto-interativo" onclick="riscarOuCircundarTexto(event)" id="Yurei"
+                        unselectable="on">Yurei</h4>
+                    <h4 class="block texto-interativo" onclick="riscarOuCircundarTexto(event)" id="Hantu"
+                        unselectable="on">Hantu</h4>
+                    <h4 class="block texto-interativo" onclick="riscarOuCircundarTexto(event)" id="Onryo"
+                        unselectable="on">Onryo</h4>
+                    <h4 class="block texto-interativo" onclick="riscarOuCircundarTexto(event)" id="Obake"
+                        unselectable="on">Obake</h4>
+                    <h4 class="block texto-interativo" onclick="riscarOuCircundarTexto(event)" id="Deogen"
+                        unselectable="on">Deogen</h4>
+                </div>
+                <div class="column-container">
+                    <h4 class="block texto-interativo" onclick="riscarOuCircundarTexto(event)" id="Phantom">Phantom</h4>
+                    <h4 class="block texto-interativo" onclick="riscarOuCircundarTexto(event)" id="Jinn"
+                        unselectable="on">Jinn</h4>
+                    <h4 class="block texto-interativo" onclick="riscarOuCircundarTexto(event)" id="Shade"
+                        unselectable="on">Shade</h4>
+                    <h4 class="block texto-interativo" onclick="riscarOuCircundarTexto(event)" id="Oni"
+                        unselectable="on">Oni</h4>
+                    <h4 class="block texto-interativo" onclick="riscarOuCircundarTexto(event)" id="Goryo"
+                        unselectable="on">Goryo</h4>
+                    <h4 class="block texto-interativo" onclick="riscarOuCircundarTexto(event)" id="TheTwins"
+                        unselectable="on">The Twins</h4>
+                    <h4 class="block texto-interativo" onclick="riscarOuCircundarTexto(event)" id="Mimico"
+                        unselectable="on">Mímico</h4>
+                    <h4 class="block texto-interativo" onclick="riscarOuCircundarTexto(event)" id="Thaye"
+                        unselectable="on">Thaye</h4>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
+
 </html>
 
 <script>
-    function riscarTexto() {
-        var texto = document.getElementById("texto-interativo");
-        if (texto.classList.contains("riscado")) {
-            texto.classList.remove("riscado");
+    var lastClickTime = 0;
+    var doubleClickDelay = 300;
+    var doubleClickTimer = null;
+
+    function riscarOuCircundarTexto(event) {
+        var textoClicado = event.target;
+        var currentTime = performance.now();
+        if (currentTime - lastClickTime < doubleClickDelay) {
+            clearTimeout(doubleClickTimer);
+            if (!textoClicado.classList.contains("riscado")) {
+                circundarTexto(event);
+            } else {
+                riscarTexto(event);
+            }
         } else {
-            texto.classList.add("riscado");
+            doubleClickTimer = setTimeout(function () {
+                riscarTexto(event);
+            }, doubleClickDelay);
+        }
+        lastClickTime = currentTime;
+    }
+
+    function riscarTexto(event) {
+        var paragrafoClicado = event.target;
+        if (paragrafoClicado.classList.contains("circulado")) {
+            return; // Bloqueia o risco manual se o texto estiver circulado
+        }
+        if (!paragrafoClicado.classList.contains("riscado")) {
+            paragrafoClicado.classList.add("riscado");
+        } else {
+            paragrafoClicado.classList.remove("riscado");
+        }
+
+        verificarRiscados();
+    }
+
+    function verificarRiscados() {
+        var checkboxes = document.querySelectorAll('.form-check-input');
+        checkboxes.forEach(function (checkbox) {
+            if (checkbox.checked) {
+                var textosAlvo = checkbox.getAttribute('data-textos-alvo').split(' ');
+                textosAlvo.forEach(function (textoAlvo) {
+                    var alvo = document.getElementById(textoAlvo);
+                    if (alvo) {
+                        if (!alvo.classList.contains('riscado')) {
+                            alvo.classList.add('riscado');
+                        }
+                        alvo.classList.remove('circulado');
+                    }
+                });
+            }
+        });
+    }
+
+    function circundarTexto(event) {
+        var textoClicado = event.target;
+        if (textoClicado.classList.contains("circulado")) {
+            textoClicado.classList.remove("circulado"); // Remove o circulo se o texto estiver circulado
+            return;
+        }
+        if (!textoClicado.classList.contains("riscado")) {
+            textoClicado.classList.toggle("circulado");
         }
     }
+
+    // Função para verificar as checkboxes marcadas e riscar os textos alvo
+    function marcarTextosAlvo() {
+        var checkboxes = document.querySelectorAll('.form-check-input');
+        checkboxes.forEach(function (checkbox) {
+            checkbox.addEventListener('change', function () {
+                var textosAlvo = this.getAttribute('data-textos-alvo').split(' ');
+                textosAlvo.forEach(function (textoAlvo) {
+                    var alvo = document.getElementById(textoAlvo);
+                    if (alvo) {
+                        if (checkbox.checked) {
+                            alvo.classList.add('riscado');
+                            alvo.classList.remove('circulado');
+                        } else {
+                            var outrasCheckboxesMarcadas = document.querySelectorAll('.form-check-input:checked');
+                            var outrasMarcamEsteTexto = Array.from(outrasCheckboxesMarcadas).some(function (outraCheckbox) {
+                                return outraCheckbox !== checkbox && outraCheckbox.getAttribute('data-textos-alvo').split(' ').includes(textoAlvo);
+                            });
+                            if (!outrasMarcamEsteTexto) {
+                                alvo.classList.remove('riscado');
+                            }
+                        }
+                    }
+                });
+            });
+        });
+    }
+
+    // Chama a função para marcar os textos alvo quando a página for carregada
+    marcarTextosAlvo();
 </script>
