@@ -15,17 +15,11 @@
     font-size: 24px;
     font-weight: bold;
     color: #ff0000;
-    /* Cor do texto */
     text-shadow:
         -1px -1px 0 #000,
-        /* Sombra superior esquerda (preta) */
         1px -1px 0 #000,
-        /* Sombra superior direita (preta) */
         -1px 1px 0 #000,
-        /* Sombra inferior esquerda (preta) */
         1px 1px 0 #000;
-    /* Sombra inferior direita (preta) */
-
 }
 
 .custom-checkbox {
@@ -40,19 +34,14 @@
 
 .custom-checkbox:checked {
     background-color: #198754;
-    /* Cor verde quando marcado */
     border-color: #198754;
-    /* Cor da borda do checkbox quando marcado */
 }
 
 .custom-checkbox2:checked {
     background-color: #cc0d0d;
-    /* Cor verde quando marcado */
     border-color: #cc0d0d;
-    /* Cor da borda do checkbox quando marcado */
 }
 
-/* Remover a sombra de foco */
 .custom-checkbox:focus {
     box-shadow: none;
 }
