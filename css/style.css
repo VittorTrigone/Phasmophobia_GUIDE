@@ -28,11 +28,6 @@
 
 }
 
-
-.highlight {
-    background-color: rgb(255, 0, 0);
-}
-
 .custom-checkbox {
     width: 27px;
     height: 27px;
@@ -44,13 +39,17 @@
 }
 
 .custom-checkbox:checked {
-    background-color: #198754; /* Cor verde quando marcado */
-    border-color: #198754; /* Cor da borda do checkbox quando marcado */
+    background-color: #198754;
+    /* Cor verde quando marcado */
+    border-color: #198754;
+    /* Cor da borda do checkbox quando marcado */
 }
 
 .custom-checkbox2:checked {
-    background-color: #cc0d0d; /* Cor verde quando marcado */
-    border-color: #cc0d0d; /* Cor da borda do checkbox quando marcado */
+    background-color: #cc0d0d;
+    /* Cor verde quando marcado */
+    border-color: #cc0d0d;
+    /* Cor da borda do checkbox quando marcado */
 }
 
 /* Remover a sombra de foco */
@@ -60,4 +59,24 @@
 
 .custom-checkbox2:focus {
     box-shadow: none;
+}
+
+.accordion-button:focus {
+    box-shadow: none;
+}
+
+.navbar1 {
+    padding: 10px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 5;
+}
+
+.fixo-rodape {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
 }
