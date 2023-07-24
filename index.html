@@ -5,16 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Phasmo</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
-        integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
-        integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/style.css">
 </head>
@@ -30,7 +24,7 @@
             <form class="d-flex">
                 <input class="form-control me-2" type="search" placeholder="Digite sua pesquisa..." aria-label="Search"
                     id="searchInput">
-                <button class="btn btn-outline-success" onclick="highlightText()">Pesquisar</button>
+                <button class="btn btn-outline-success">Pesquisar</button>
             </form>
         </div>
     </nav>
@@ -43,17 +37,17 @@
                 <div style="text-align: center;">
                     <h1>Caça depois de 50%</h1>
                 </div>
-                <div>
+                <div class="mt-5 mb-5">
                     <div class="accordion" id="CacaDepoisDos50">
                         <div class="accordion-item">
                             <h2 class="accordion-header" id="headingOne">
-                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#MUDARRRRR1111" aria-expanded="true" aria-controls="MUDARRRRR1111">
-                                    Accordion Item #1
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#Spirit" aria-expanded="true" aria-controls="Spirit">
+                                    Spirit
                                 </button>
                             </h2>
-                            <div id="MUDARRRRR1111" class="accordion-collapse collapse show"
-                                aria-labelledby="headingOne" data-bs-parent="#CacaDepoisDos50">
+                            <div id="Spirit" class="accordion-collapse collapse" aria-labelledby="headingOne"
+                                data-bs-parent="#CacaDepoisDos50">
                                 <div class="accordion-body">
                                     <strong>Velocidade:</strong>
                                     <br>
@@ -83,11 +77,11 @@
                         <div class="accordion-item">
                             <h2 class="accordion-header" id="headingTwo">
                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#MUDARRRRR2222" aria-expanded="false" aria-controls="MUDARRRRR2222">
-                                    Accordion Item #2
+                                    data-bs-target="#Wraith" aria-expanded="false" aria-controls="Wraith">
+                                    Wraith
                                 </button>
                             </h2>
-                            <div id="MUDARRRRR2222" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                            <div id="Wraith" class="accordion-collapse collapse" aria-labelledby="headingTwo"
                                 data-bs-parent="#CacaDepoisDos50">
                                 <div class="accordion-body">
                                     <strong>Velocidade:</strong>
@@ -118,11 +112,466 @@
                         <div class="accordion-item">
                             <h2 class="accordion-header" id="headingThree">
                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#MUDARRRRR3333" aria-expanded="false" aria-controls="MUDARRRRR3333">
-                                    Accordion Item #3
+                                    data-bs-target="#Phantom" aria-expanded="false" aria-controls="Phantom">
+                                    Phantom
                                 </button>
                             </h2>
-                            <div id="MUDARRRRR3333" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                            <div id="Phantom" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                                data-bs-parent="#CacaDepoisDos50">
+                                <div class="accordion-body">
+                                    <strong>Velocidade:</strong>
+                                    <br>
+                                    1,7 m/s
+                                    <br>
+                                    <br>
+                                    <strong>Só ele faz:</strong>
+                                    <br>
+                                    A vela sempre vai apagar antes do crucifixo queimar, então se tiver uma vela e um
+                                    crucifixo lado a lado e o crucifixo queimar antes da vela apagar, pode descartar a
+                                    pocibilidade de Onryo.
+                                    <br>
+                                    <br>
+                                    <strong>Curiosidade:</strong>
+                                    <br>
+                                    A vela funciona como um crucifixo, se ela estiver acesa ele não vai atacar.
+                                    <br>
+                                    <br>
+                                    <strong>Dica:</strong>
+                                    <br>
+                                    para fazer o teste de Onryo, coloque 3
+                                    velas do lado de um crucifixo na sala do fantasma, se ele queimar o
+                                    crucifixo apenas depois de ter apagado as 3 velas, é Onryo.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingThree">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#Poltergeist" aria-expanded="false" aria-controls="Poltergeist">
+                                    Poltergeist
+                                </button>
+                            </h2>
+                            <div id="Poltergeist" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                                data-bs-parent="#CacaDepoisDos50">
+                                <div class="accordion-body">
+                                    <strong>Velocidade:</strong>
+                                    <br>
+                                    1,7 m/s
+                                    <br>
+                                    <br>
+                                    <strong>Só ele faz:</strong>
+                                    <br>
+                                    A vela sempre vai apagar antes do crucifixo queimar, então se tiver uma vela e um
+                                    crucifixo lado a lado e o crucifixo queimar antes da vela apagar, pode descartar a
+                                    pocibilidade de Onryo.
+                                    <br>
+                                    <br>
+                                    <strong>Curiosidade:</strong>
+                                    <br>
+                                    A vela funciona como um crucifixo, se ela estiver acesa ele não vai atacar.
+                                    <br>
+                                    <br>
+                                    <strong>Dica:</strong>
+                                    <br>
+                                    para fazer o teste de Onryo, coloque 3
+                                    velas do lado de um crucifixo na sala do fantasma, se ele queimar o
+                                    crucifixo apenas depois de ter apagado as 3 velas, é Onryo.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingThree">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#Banshee" aria-expanded="false" aria-controls="Banshee">
+                                    Banshee
+                                </button>
+                            </h2>
+                            <div id="Banshee" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                                data-bs-parent="#CacaDepoisDos50">
+                                <div class="accordion-body">
+                                    <strong>Velocidade:</strong>
+                                    <br>
+                                    1,7 m/s
+                                    <br>
+                                    <br>
+                                    <strong>Só ele faz:</strong>
+                                    <br>
+                                    A vela sempre vai apagar antes do crucifixo queimar, então se tiver uma vela e um
+                                    crucifixo lado a lado e o crucifixo queimar antes da vela apagar, pode descartar a
+                                    pocibilidade de Onryo.
+                                    <br>
+                                    <br>
+                                    <strong>Curiosidade:</strong>
+                                    <br>
+                                    A vela funciona como um crucifixo, se ela estiver acesa ele não vai atacar.
+                                    <br>
+                                    <br>
+                                    <strong>Dica:</strong>
+                                    <br>
+                                    para fazer o teste de Onryo, coloque 3
+                                    velas do lado de um crucifixo na sala do fantasma, se ele queimar o
+                                    crucifixo apenas depois de ter apagado as 3 velas, é Onryo.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingThree">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#Jinn" aria-expanded="false" aria-controls="Jinn">
+                                    Jinn
+                                </button>
+                            </h2>
+                            <div id="Jinn" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                                data-bs-parent="#CacaDepoisDos50">
+                                <div class="accordion-body">
+                                    <strong>Velocidade:</strong>
+                                    <br>
+                                    1,7 m/s
+                                    <br>
+                                    <br>
+                                    <strong>Só ele faz:</strong>
+                                    <br>
+                                    A vela sempre vai apagar antes do crucifixo queimar, então se tiver uma vela e um
+                                    crucifixo lado a lado e o crucifixo queimar antes da vela apagar, pode descartar a
+                                    pocibilidade de Onryo.
+                                    <br>
+                                    <br>
+                                    <strong>Curiosidade:</strong>
+                                    <br>
+                                    A vela funciona como um crucifixo, se ela estiver acesa ele não vai atacar.
+                                    <br>
+                                    <br>
+                                    <strong>Dica:</strong>
+                                    <br>
+                                    para fazer o teste de Onryo, coloque 3
+                                    velas do lado de um crucifixo na sala do fantasma, se ele queimar o
+                                    crucifixo apenas depois de ter apagado as 3 velas, é Onryo.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingThree">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#Revenant" aria-expanded="false" aria-controls="Revenant">
+                                    Revenant
+                                </button>
+                            </h2>
+                            <div id="Revenant" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                                data-bs-parent="#CacaDepoisDos50">
+                                <div class="accordion-body">
+                                    <strong>Velocidade:</strong>
+                                    <br>
+                                    1,7 m/s
+                                    <br>
+                                    <br>
+                                    <strong>Só ele faz:</strong>
+                                    <br>
+                                    A vela sempre vai apagar antes do crucifixo queimar, então se tiver uma vela e um
+                                    crucifixo lado a lado e o crucifixo queimar antes da vela apagar, pode descartar a
+                                    pocibilidade de Onryo.
+                                    <br>
+                                    <br>
+                                    <strong>Curiosidade:</strong>
+                                    <br>
+                                    A vela funciona como um crucifixo, se ela estiver acesa ele não vai atacar.
+                                    <br>
+                                    <br>
+                                    <strong>Dica:</strong>
+                                    <br>
+                                    para fazer o teste de Onryo, coloque 3
+                                    velas do lado de um crucifixo na sala do fantasma, se ele queimar o
+                                    crucifixo apenas depois de ter apagado as 3 velas, é Onryo.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingThree">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#Shade" aria-expanded="false" aria-controls="Shade">
+                                    Shade
+                                </button>
+                            </h2>
+                            <div id="Shade" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                                data-bs-parent="#CacaDepoisDos50">
+                                <div class="accordion-body">
+                                    <strong>Velocidade:</strong>
+                                    <br>
+                                    1,7 m/s
+                                    <br>
+                                    <br>
+                                    <strong>Só ele faz:</strong>
+                                    <br>
+                                    A vela sempre vai apagar antes do crucifixo queimar, então se tiver uma vela e um
+                                    crucifixo lado a lado e o crucifixo queimar antes da vela apagar, pode descartar a
+                                    pocibilidade de Onryo.
+                                    <br>
+                                    <br>
+                                    <strong>Curiosidade:</strong>
+                                    <br>
+                                    A vela funciona como um crucifixo, se ela estiver acesa ele não vai atacar.
+                                    <br>
+                                    <br>
+                                    <strong>Dica:</strong>
+                                    <br>
+                                    para fazer o teste de Onryo, coloque 3
+                                    velas do lado de um crucifixo na sala do fantasma, se ele queimar o
+                                    crucifixo apenas depois de ter apagado as 3 velas, é Onryo.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingThree">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#Yurei" aria-expanded="false" aria-controls="Yurei">
+                                    Yurei
+                                </button>
+                            </h2>
+                            <div id="Yurei" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                                data-bs-parent="#CacaDepoisDos50">
+                                <div class="accordion-body">
+                                    <strong>Velocidade:</strong>
+                                    <br>
+                                    1,7 m/s
+                                    <br>
+                                    <br>
+                                    <strong>Só ele faz:</strong>
+                                    <br>
+                                    A vela sempre vai apagar antes do crucifixo queimar, então se tiver uma vela e um
+                                    crucifixo lado a lado e o crucifixo queimar antes da vela apagar, pode descartar a
+                                    pocibilidade de Onryo.
+                                    <br>
+                                    <br>
+                                    <strong>Curiosidade:</strong>
+                                    <br>
+                                    A vela funciona como um crucifixo, se ela estiver acesa ele não vai atacar.
+                                    <br>
+                                    <br>
+                                    <strong>Dica:</strong>
+                                    <br>
+                                    para fazer o teste de Onryo, coloque 3
+                                    velas do lado de um crucifixo na sala do fantasma, se ele queimar o
+                                    crucifixo apenas depois de ter apagado as 3 velas, é Onryo.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingThree">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#Oni" aria-expanded="false" aria-controls="Oni">
+                                    Oni
+                                </button>
+                            </h2>
+                            <div id="Oni" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                                data-bs-parent="#CacaDepoisDos50">
+                                <div class="accordion-body">
+                                    <strong>Velocidade:</strong>
+                                    <br>
+                                    1,7 m/s
+                                    <br>
+                                    <br>
+                                    <strong>Só ele faz:</strong>
+                                    <br>
+                                    A vela sempre vai apagar antes do crucifixo queimar, então se tiver uma vela e um
+                                    crucifixo lado a lado e o crucifixo queimar antes da vela apagar, pode descartar a
+                                    pocibilidade de Onryo.
+                                    <br>
+                                    <br>
+                                    <strong>Curiosidade:</strong>
+                                    <br>
+                                    A vela funciona como um crucifixo, se ela estiver acesa ele não vai atacar.
+                                    <br>
+                                    <br>
+                                    <strong>Dica:</strong>
+                                    <br>
+                                    para fazer o teste de Onryo, coloque 3
+                                    velas do lado de um crucifixo na sala do fantasma, se ele queimar o
+                                    crucifixo apenas depois de ter apagado as 3 velas, é Onryo.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingThree">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#Hantu" aria-expanded="false" aria-controls="Hantu">
+                                    Hantu
+                                </button>
+                            </h2>
+                            <div id="Hantu" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                                data-bs-parent="#CacaDepoisDos50">
+                                <div class="accordion-body">
+                                    <strong>Velocidade:</strong>
+                                    <br>
+                                    1,7 m/s
+                                    <br>
+                                    <br>
+                                    <strong>Só ele faz:</strong>
+                                    <br>
+                                    A vela sempre vai apagar antes do crucifixo queimar, então se tiver uma vela e um
+                                    crucifixo lado a lado e o crucifixo queimar antes da vela apagar, pode descartar a
+                                    pocibilidade de Onryo.
+                                    <br>
+                                    <br>
+                                    <strong>Curiosidade:</strong>
+                                    <br>
+                                    A vela funciona como um crucifixo, se ela estiver acesa ele não vai atacar.
+                                    <br>
+                                    <br>
+                                    <strong>Dica:</strong>
+                                    <br>
+                                    para fazer o teste de Onryo, coloque 3
+                                    velas do lado de um crucifixo na sala do fantasma, se ele queimar o
+                                    crucifixo apenas depois de ter apagado as 3 velas, é Onryo.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingThree">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#Goryo" aria-expanded="false" aria-controls="Goryo">
+                                    Goryo
+                                </button>
+                            </h2>
+                            <div id="Goryo" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                                data-bs-parent="#CacaDepoisDos50">
+                                <div class="accordion-body">
+                                    <strong>Velocidade:</strong>
+                                    <br>
+                                    1,7 m/s
+                                    <br>
+                                    <br>
+                                    <strong>Só ele faz:</strong>
+                                    <br>
+                                    A vela sempre vai apagar antes do crucifixo queimar, então se tiver uma vela e um
+                                    crucifixo lado a lado e o crucifixo queimar antes da vela apagar, pode descartar a
+                                    pocibilidade de Onryo.
+                                    <br>
+                                    <br>
+                                    <strong>Curiosidade:</strong>
+                                    <br>
+                                    A vela funciona como um crucifixo, se ela estiver acesa ele não vai atacar.
+                                    <br>
+                                    <br>
+                                    <strong>Dica:</strong>
+                                    <br>
+                                    para fazer o teste de Onryo, coloque 3
+                                    velas do lado de um crucifixo na sala do fantasma, se ele queimar o
+                                    crucifixo apenas depois de ter apagado as 3 velas, é Onryo.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingThree">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#Myling" aria-expanded="false" aria-controls="Myling">
+                                    Myling
+                                </button>
+                            </h2>
+                            <div id="Myling" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                                data-bs-parent="#CacaDepoisDos50">
+                                <div class="accordion-body">
+                                    <strong>Velocidade:</strong>
+                                    <br>
+                                    1,7 m/s
+                                    <br>
+                                    <br>
+                                    <strong>Só ele faz:</strong>
+                                    <br>
+                                    A vela sempre vai apagar antes do crucifixo queimar, então se tiver uma vela e um
+                                    crucifixo lado a lado e o crucifixo queimar antes da vela apagar, pode descartar a
+                                    pocibilidade de Onryo.
+                                    <br>
+                                    <br>
+                                    <strong>Curiosidade:</strong>
+                                    <br>
+                                    A vela funciona como um crucifixo, se ela estiver acesa ele não vai atacar.
+                                    <br>
+                                    <br>
+                                    <strong>Dica:</strong>
+                                    <br>
+                                    para fazer o teste de Onryo, coloque 3
+                                    velas do lado de um crucifixo na sala do fantasma, se ele queimar o
+                                    crucifixo apenas depois de ter apagado as 3 velas, é Onryo.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingThree">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#TheTwins" aria-expanded="false" aria-controls="TheTwins">
+                                    The Twins
+                                </button>
+                            </h2>
+                            <div id="TheTwins" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                                data-bs-parent="#CacaDepoisDos50">
+                                <div class="accordion-body">
+                                    <strong>Velocidade:</strong>
+                                    <br>
+                                    1,7 m/s
+                                    <br>
+                                    <br>
+                                    <strong>Só ele faz:</strong>
+                                    <br>
+                                    A vela sempre vai apagar antes do crucifixo queimar, então se tiver uma vela e um
+                                    crucifixo lado a lado e o crucifixo queimar antes da vela apagar, pode descartar a
+                                    pocibilidade de Onryo.
+                                    <br>
+                                    <br>
+                                    <strong>Curiosidade:</strong>
+                                    <br>
+                                    A vela funciona como um crucifixo, se ela estiver acesa ele não vai atacar.
+                                    <br>
+                                    <br>
+                                    <strong>Dica:</strong>
+                                    <br>
+                                    para fazer o teste de Onryo, coloque 3
+                                    velas do lado de um crucifixo na sala do fantasma, se ele queimar o
+                                    crucifixo apenas depois de ter apagado as 3 velas, é Onryo.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingThree">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#Obake" aria-expanded="false" aria-controls="Obake">
+                                    Obake
+                                </button>
+                            </h2>
+                            <div id="Obake" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                                data-bs-parent="#CacaDepoisDos50">
+                                <div class="accordion-body">
+                                    <strong>Velocidade:</strong>
+                                    <br>
+                                    1,7 m/s
+                                    <br>
+                                    <br>
+                                    <strong>Só ele faz:</strong>
+                                    <br>
+                                    A vela sempre vai apagar antes do crucifixo queimar, então se tiver uma vela e um
+                                    crucifixo lado a lado e o crucifixo queimar antes da vela apagar, pode descartar a
+                                    pocibilidade de Onryo.
+                                    <br>
+                                    <br>
+                                    <strong>Curiosidade:</strong>
+                                    <br>
+                                    A vela funciona como um crucifixo, se ela estiver acesa ele não vai atacar.
+                                    <br>
+                                    <br>
+                                    <strong>Dica:</strong>
+                                    <br>
+                                    para fazer o teste de Onryo, coloque 3
+                                    velas do lado de um crucifixo na sala do fantasma, se ele queimar o
+                                    crucifixo apenas depois de ter apagado as 3 velas, é Onryo.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingThree">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#Deogen" aria-expanded="false" aria-controls="Deogen">
+                                    Deogen
+                                </button>
+                            </h2>
+                            <div id="Deogen" class="accordion-collapse collapse" aria-labelledby="headingThree"
                                 data-bs-parent="#CacaDepoisDos50">
                                 <div class="accordion-body">
                                     <strong>Velocidade:</strong>
@@ -157,16 +606,16 @@
                 <div style="text-align: center;">
                     <h1>Caça com qualquer sanidade</h1>
                 </div>
-                <div>
+                <div class="mt-5 mb-5">
                     <div class="accordion" id="CacaComQualquerSanidade">
                         <div class="accordion-item">
                             <h2 class="accordion-header" id="headingOne">
-                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                     data-bs-target="#Demon" aria-expanded="true" aria-controls="Demon">
                                     Demon
                                 </button>
                             </h2>
-                            <div id="Demon" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                            <div id="Demon" class="accordion-collapse collapse" aria-labelledby="headingOne"
                                 data-bs-parent="#CacaComQualquerSanidade">
                                 <div class="accordion-body">
                                     <strong>Velocidade:</strong>
@@ -250,7 +699,6 @@
                                 </div>
                             </div>
                         </div>
-                        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
                         <div class="accordion-item">
                             <h2 class="accordion-header" id="headingThree">
                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
@@ -289,18 +737,17 @@
                 <div style="text-align: center;">
                     <h1>Outros</h1>
                 </div>
-                <div>
+                <div class="mt-5 mb-5">
                     <div class="accordion" id="Outros">
                         <div class="accordion-item">
                             <h2 class="accordion-header" id="headingOne">
-                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#MUDARRRRR11111" aria-expanded="true"
-                                    aria-controls="MUDARRRRR11111">
-                                    Accordion Item #1
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#Mare" aria-expanded="true" aria-controls="Mare">
+                                    Mare
                                 </button>
                             </h2>
-                            <div id="MUDARRRRR11111" class="accordion-collapse collapse show"
-                                aria-labelledby="headingOne" data-bs-parent="#Outros">
+                            <div id="Mare" class="accordion-collapse collapse" aria-labelledby="headingOne"
+                                data-bs-parent="#Outros">
                                 <div class="accordion-body">
                                     <strong>Velocidade:</strong>
                                     <br>
@@ -330,12 +777,11 @@
                         <div class="accordion-item">
                             <h2 class="accordion-header" id="headingTwo">
                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#MUDARRRRR22222" aria-expanded="false"
-                                    aria-controls="MUDARRRRR22222">
-                                    Accordion Item #2
+                                    data-bs-target="#Raiju" aria-expanded="false" aria-controls="Raiju">
+                                    Raiju
                                 </button>
                             </h2>
-                            <div id="MUDARRRRR22222" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                            <div id="Raiju" class="accordion-collapse collapse" aria-labelledby="headingTwo"
                                 data-bs-parent="#Outros">
                                 <div class="accordion-body">
                                     <strong>Velocidade:</strong>
@@ -366,12 +812,46 @@
                         <div class="accordion-item">
                             <h2 class="accordion-header" id="headingThree">
                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#MUDARRRRR33333" aria-expanded="false"
-                                    aria-controls="MUDARRRRR33333">
-                                    Accordion Item #3
+                                    data-bs-target="#Mimico" aria-expanded="false" aria-controls="Mimico">
+                                    Mímico
                                 </button>
                             </h2>
-                            <div id="MUDARRRRR33333" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                            <div id="Mimico" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                                data-bs-parent="#Outros">
+                                <div class="accordion-body">
+                                    <strong>Velocidade:</strong>
+                                    <br>
+                                    1,7 m/s
+                                    <br>
+                                    <br>
+                                    <strong>Só ele faz:</strong>
+                                    <br>
+                                    A vela sempre vai apagar antes do crucifixo queimar, então se tiver uma vela e um
+                                    crucifixo lado a lado e o crucifixo queimar antes da vela apagar, pode descartar a
+                                    pocibilidade de Onryo.
+                                    <br>
+                                    <br>
+                                    <strong>Curiosidade:</strong>
+                                    <br>
+                                    A vela funciona como um crucifixo, se ela estiver acesa ele não vai atacar.
+                                    <br>
+                                    <br>
+                                    <strong>Dica:</strong>
+                                    <br>
+                                    para fazer o teste de Onryo, coloque 3
+                                    velas do lado de um crucifixo na sala do fantasma, se ele queimar o
+                                    crucifixo apenas depois de ter apagado as 3 velas, é Onryo.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingThree">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#Moroi" aria-expanded="false" aria-controls="Moroi">
+                                    Moroi
+                                </button>
+                            </h2>
+                            <div id="Moroi" class="accordion-collapse collapse" aria-labelledby="headingThree"
                                 data-bs-parent="#Outros">
                                 <div class="accordion-body">
                                     <strong>Velocidade:</strong>
@@ -404,42 +884,14 @@
             </div>
         </div>
     </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+        crossorigin="anonymous"></script>
+
 </body>
 
 </html>
-
-
-<script>
-    function highlightText() {
-        // Recupera o texto digitado pelo usuário
-        var searchText = document.getElementById('searchInput').value;
-
-        // Remove qualquer formatação de destaque anterior
-        var highlightedElements = document.querySelectorAll('.highlight');
-        highlightedElements.forEach(function (element) {
-            element.classList.remove('highlight');
-        });
-
-        // Realiza a pesquisa e aplica o destaque
-        if (searchText) {
-            var regex = new RegExp("(" + searchText + ")", "gi");
-            var allElements = document.querySelectorAll('*');
-            allElements.forEach(function (element) {
-                if (element.innerHTML && element.innerHTML.match(regex)) {
-                    element.innerHTML = element.innerHTML.replace(regex, "<span class='highlight'>$1</span>");
-                }
-            });
-        }
-
-        // Remove o destaque após 5 segundos
-        setTimeout(removeHighlight, 3000);
-    }
-
-    // Função para remover o destaque amarelo
-    function removeHighlight() {
-        var highlightedElements = document.querySelectorAll('.highlight');
-        highlightedElements.forEach(function (element) {
-            element.outerHTML = element.innerHTML;
-        });
-    }
-</script>
