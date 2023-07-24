@@ -36,128 +36,236 @@
         </div>
     </nav>
 
-    <div style="max-width: 40%; min-width: 40%;" class="border border-dark p-4">
-        <div>
-            <div class="text-center mb-4">
-                <h1>Evidências</h1>
-            </div>
-            <div class="d-flex justify-content-center">
-                <div style="background-color: black; width: 90%; height: 3px;"></div>
-            </div>
-            <div class="d-flex flex-row justify-content-evenly">
-                <div class="d-flex flex-column mt-4 mb-4">
-                    <div>
-                        <input class="form-check-input custom-checkbox" type="checkbox"
-                            data-textos-alvo="Phantom Poltergeist Banshee Mare Revenant Demon Yurei Youkai Hantu Onryo Mimico Moroi Deogen Thaye">
-                        <label class="form-check-label block">
-                            <h3>EMF Nível 5</h3>
-                        </label>
+    <div class="p-5">
+        <div class="d-flex flex-row justify-content-evenly align-items-center">
+            <div style="max-width: 40%; min-width: 40%;" class="border border-dark p-4">
+                <div>
+                    <div class="text-center mb-4">
+                        <h1>Evidências</h1>
                     </div>
-                    <div>
-                        <input class="form-check-input custom-checkbox" type="checkbox"
-                            data-textos-alvo="Spirit Wraith Mare Revenant Shade Yurei Oni Youkai Onryo TheTwins Moroi Deogen Thaye">
-                        <label class="form-check-label block">
-                            <h3>Impressões Digitais</h3>
-                        </label>
+                    <div class="d-flex justify-content-center">
+                        <div style="background-color: black; width: 90%; height: 3px;"></div>
                     </div>
-                    <div>
-                        <input class="form-check-input custom-checkbox" type="checkbox"
-                            data-textos-alvo="Wraith Phantom Banshee Jinn Yurei Oni Youkai Hantu Goryo Onryo TheTwins Raiju Obake Mimico">
-                        <label class="form-check-label block">
-                            <h3>Escrita Fantasma</h3>
-                        </label>
+                    <div class="d-flex flex-row justify-content-evenly">
+                        <div class="d-flex flex-column mt-4 mb-4">
+                            <div>
+                                <label class="form-check-label block">
+                                    <h3 id="EMF">EMF Nível 5</h3>
+                                </label>
+                                <input class="form-check-input custom-checkbox" type="checkbox"
+                                    data-textos-alvo="Phantom Poltergeist Banshee Mare Revenant Demon Yurei Youkai Hantu Onryo Mimico Moroi Deogen Thaye"
+                                    data-checkbox-group="grupo1">
+                                <input class="form-check-input custom-checkbox2" type="checkbox"
+                                    data-textos-alvo="Spirit Wraith Jinn Shade Oni Goryo Myling TheTwins Raiju Obake EMF"
+                                    data-checkbox-group="grupo1">
+
+                            </div>
+                            <div>
+                                <label class="form-check-label block">
+                                    <h3 id="DIGITAL">Impressões Digitais</h3>
+                                </label>
+                                <input class="form-check-input custom-checkbox" type="checkbox"
+                                    data-textos-alvo="Spirit Wraith Mare Revenant Shade Yurei Oni Youkai Onryo TheTwins Moroi Deogen Thaye"
+                                    data-checkbox-group="grupo2">
+                                <input class="form-check-input custom-checkbox2" type="checkbox"
+                                    data-textos-alvo="Phantom Poltergeist Banshee Jinn Demon Hantu Goryo Myling Obake Mimico DIGITAL"
+                                    data-checkbox-group="grupo2">
+                            </div>
+                            <div>
+                                <label class="form-check-label block">
+                                    <h3 id="ESCRITA">Escrita Fantasma</h3>
+                                </label>
+                                <input class="form-check-input custom-checkbox" type="checkbox"
+                                    data-textos-alvo="Wraith Phantom Banshee Jinn Yurei Oni Youkai Hantu Goryo Onryo TheTwins Raiju Obake Mimico"
+                                    data-checkbox-group="grupo3">
+                                <input class="form-check-input custom-checkbox2" type="checkbox"
+                                    data-textos-alvo="Spirit Poltergeist Mare Revenant Shade Demon Myling Moroi Deogen Thaye ESCRITA"
+                                    data-checkbox-group="grupo3">
+                            </div>
+                            <div>
+                                <label class="form-check-label block">
+                                    <h3 id="TEMP">Temperatura Baixa</h3>
+                                </label>
+                                <input class="form-check-input custom-checkbox" type="checkbox"
+                                    data-textos-alvo="Spirit Wraith Phantom Poltergeist Banshee Mare Youkai Goryo Myling Raiju Obake Deogen Thaye"
+                                    data-checkbox-group="grupo4">
+                                <input class="form-check-input custom-checkbox2" type="checkbox"
+                                    data-textos-alvo="Jinn Revenant Shade Demon Yurei Oni Hantu Onryo TheTwins Mimico Moroi TEMP"
+                                    data-checkbox-group="grupo4">
+                            </div>
+                        </div>
+                        <div class="d-flex flex-column mt-4">
+                            <div>
+                                <label class="form-check-label block">
+                                    <h3 id="DOTS">Projetor D.O.T.S</h3>
+                                </label>
+                                <input class="form-check-input custom-checkbox" type="checkbox"
+                                    data-textos-alvo="Spirit Poltergeist Jinn Mare Revenant Shade Demon Hantu Myling Onryo TheTwins Obake Mimico Moroi"
+                                    data-checkbox-group="grupo5">
+                                <input class="form-check-input custom-checkbox2" type="checkbox"
+                                    data-textos-alvo="Wraith Phantom Banshee Yurei Oni Youkai Goryo Raiju Deogen Thaye DOTS"
+                                    data-checkbox-group="grupo5">
+                            </div>
+                            <div>
+                                <label class="form-check-label block">
+                                    <h3 id="ORBE">Orbe Fantasma</h3>
+                                </label>
+                                <input class="form-check-input custom-checkbox" type="checkbox"
+                                    data-textos-alvo="Spirit Wraith Phantom Poltergeist Jinn Shade Demon Oni Goryo Myling TheTwins Mimico Moroi Deogen"
+                                    data-checkbox-group="grupo6">
+                                <input class="form-check-input custom-checkbox2" type="checkbox"
+                                    data-textos-alvo="Banshee Mare Revenant Yurei Youkai Hantu Onryo Raiju Obake Thaye ORBE"
+                                    data-checkbox-group="grupo6">
+                            </div>
+                            <div>
+                                <label class="form-check-label block">
+                                    <h3 id="BOX">Spirit Box</h3>
+                                </label>
+                                <input class="form-check-input custom-checkbox" type="checkbox"
+                                    data-textos-alvo="Banshee Jinn Revenant Shade Demon Yurei Oni Hantu Goryo Myling Raiju Obake Thaye"
+                                    data-checkbox-group="grupo7">
+                                <input class="form-check-input custom-checkbox2" type="checkbox"
+                                    data-textos-alvo="Spirit Wraith Phantom Poltergeist Mare Youkai Onryo TheTwins Mimico Moroi Deogen BOX"
+                                    data-checkbox-group="grupo7">
+                            </div>
+                        </div>
                     </div>
-                    <div>
-                        <input class="form-check-input custom-checkbox" type="checkbox"
-                            data-textos-alvo="Spirit Wraith Phantom Poltergeist Banshee Mare Youkai Goryo Myling Raiju Obake Deogen Thaye">
-                        <label class="form-check-label block">
-                            <h3>Temperatura Baixa</h3>
-                        </label>
+                    <div class="d-flex justify-content-center">
+                        <div style="background-color: black; width: 90%; height: 3px;"></div>
+                    </div>
+                    <div class="text-center mt-4 mb-4">
+                        <h1>Fantasmas</h1>
+                    </div>
+                    <div class="d-flex justify-content-evenly text-center">
+                        <div class="column-container">
+                            <h4 class="block texto-interativo" onclick="riscarOuCircundarTexto(event)" id="Spirit">
+                                Spirit
+                            </h4>
+                            <h4 class="block texto-interativo" onclick="riscarOuCircundarTexto(event)" id="Poltergeist">
+                                Poltergeist</h4>
+                            <h4 class="block texto-interativo" onclick="riscarOuCircundarTexto(event)" id="Mare">Mare
+                            </h4>
+                            <h4 class="block texto-interativo" onclick="riscarOuCircundarTexto(event)" id="Demon">Demon
+                            </h4>
+                            <h4 class="block texto-interativo" onclick="riscarOuCircundarTexto(event)" id="Youkai">
+                                Youkai
+                            </h4>
+                            <h4 class="block texto-interativo" onclick="riscarOuCircundarTexto(event)" id="Myling">
+                                Myling
+                            </h4>
+                            <h4 class="block texto-interativo" onclick="riscarOuCircundarTexto(event)" id="Raiju">Raiju
+                            </h4>
+                            <h4 class="block texto-interativo" onclick="riscarOuCircundarTexto(event)" id="Moroi">Moroi
+                            </h4>
+                        </div>
+                        <div class="column-container">
+                            <h4 class="block texto-interativo" onclick="riscarOuCircundarTexto(event)" id="Wraith">
+                                Wraith
+                            </h4>
+                            <h4 class="block texto-interativo" onclick="riscarOuCircundarTexto(event)" id="Banshee">
+                                Banshee
+                            </h4>
+                            <h4 class="block texto-interativo" onclick="riscarOuCircundarTexto(event)" id="Revenant">
+                                Revenant</h4>
+                            <h4 class="block texto-interativo" onclick="riscarOuCircundarTexto(event)" id="Yurei">Yurei
+                            </h4>
+                            <h4 class="block texto-interativo" onclick="riscarOuCircundarTexto(event)" id="Hantu">Hantu
+                            </h4>
+                            <h4 class="block texto-interativo" onclick="riscarOuCircundarTexto(event)" id="Onryo">Onryo
+                            </h4>
+                            <h4 class="block texto-interativo" onclick="riscarOuCircundarTexto(event)" id="Obake">Obake
+                            </h4>
+                            <h4 class="block texto-interativo" onclick="riscarOuCircundarTexto(event)" id="Deogen">
+                                Deogen
+                            </h4>
+                        </div>
+                        <div class="column-container">
+                            <h4 class="block texto-interativo" onclick="riscarOuCircundarTexto(event)" id="Phantom">
+                                Phantom
+                            </h4>
+                            <h4 class="block texto-interativo" onclick="riscarOuCircundarTexto(event)" id="Jinn">Jinn
+                            </h4>
+                            <h4 class="block texto-interativo" onclick="riscarOuCircundarTexto(event)" id="Shade">Shade
+                            </h4>
+                            <h4 class="block texto-interativo" onclick="riscarOuCircundarTexto(event)" id="Oni">Oni</h4>
+                            <h4 class="block texto-interativo" onclick="riscarOuCircundarTexto(event)" id="Goryo">Goryo
+                            </h4>
+                            <h4 class="block texto-interativo" onclick="riscarOuCircundarTexto(event)" id="TheTwins">The
+                                Twins</h4>
+                            <h4 class="block texto-interativo" onclick="riscarOuCircundarTexto(event)" id="Mimico">
+                                Mímico
+                            </h4>
+                            <h4 class="block texto-interativo" onclick="riscarOuCircundarTexto(event)" id="Thaye">Thaye
+                            </h4>
+                        </div>
                     </div>
                 </div>
-                <div class="d-flex flex-column mt-4">
-                    <div>
-                        <input class="form-check-input custom-checkbox" type="checkbox"
-                            data-textos-alvo="Spirit Poltergeist Jinn Mare Revenant Shade Demon Hantu Myling Onryo TheTwins Obake Mimico Moroi">
-                        <label class="form-check-label block">
-                            <h3>Projetor D.O.T.S</h3>
-                        </label>
-                    </div>
-                    <div>
-                        <input class="form-check-input custom-checkbox" type="checkbox"
-                            data-textos-alvo="Spirit Wraith Phantom Poltergeist Jinn Shade Demon Oni Goryo Myling TheTwins Mimico Moroi Deogen">
-                        <label class="form-check-label block">
-                            <h3>Orbe Fantasma</h3>
-                        </label>
-                    </div>
-                    <div>
-                        <input class="form-check-input custom-checkbox" type="checkbox"
-                            data-textos-alvo="Banshee Jinn Revenant Shade Demon Yurei Oni Hantu Goryo Myling Raiju Obake Thaye">
-                        <label class="form-check-label block">
-                            <h3>Spirit Box</h3>
-                        </label>
-                    </div>
-                </div>
             </div>
-            <div class="d-flex justify-content-center">
-                <div style="background-color: black; width: 90%; height: 3px;"></div>
-            </div>
-            <div class="text-center mt-4 mb-4">
-                <h1>Fantasmas</h1>
-            </div>
-            <div class="d-flex justify-content-evenly text-center">
-                <div class="column-container">
-                    <h4 class="block texto-interativo" onclick="riscarOuCircundarTexto(event)" id="Spirit"
-                        unselectable="on">Spirit</h4>
-                    <h4 class="block texto-interativo" onclick="riscarOuCircundarTexto(event)" id="Poltergeist"
-                        unselectable="on">Poltergeist</h4>
-                    <h4 class="block texto-interativo" onclick="riscarOuCircundarTexto(event)" id="Mare"
-                        unselectable="on">Mare</h4>
-                    <h4 class="block texto-interativo" onclick="riscarOuCircundarTexto(event)" id="Demon"
-                        unselectable="on">Demon</h4>
-                    <h4 class="block texto-interativo" onclick="riscarOuCircundarTexto(event)" id="Youkai"
-                        unselectable="on">Youkai</h4>
-                    <h4 class="block texto-interativo" onclick="riscarOuCircundarTexto(event)" id="Myling"
-                        unselectable="on">Myling</h4>
-                    <h4 class="block texto-interativo" onclick="riscarOuCircundarTexto(event)" id="Raiju"
-                        unselectable="on">Raiju</h4>
-                    <h4 class="block texto-interativo" onclick="riscarOuCircundarTexto(event)" id="Moroi"
-                        unselectable="on">Moroi</h4>
+            <div class="align-items: center;">
+                <div>
+                    <input data-checkbox-group="1" class="form-check-input custom-checkbox" type="checkbox" data-textos-alvo="Wraith">
+                    <label class="form-check-label block">
+                        <h3>Pisou no sal?</h3>
+                    </label>
                 </div>
-                <div class="column-container">
-                    <h4 class="block texto-interativo" onclick="riscarOuCircundarTexto(event)" id="Wraith"
-                        unselectable="on">Wraith</h4>
-                    <h4 class="block texto-interativo" onclick="riscarOuCircundarTexto(event)" id="Banshee"
-                        unselectable="on">Banshee</h4>
-                    <h4 class="block texto-interativo" onclick="riscarOuCircundarTexto(event)" id="Revenant"
-                        unselectable="on">Revenant</h4>
-                    <h4 class="block texto-interativo" onclick="riscarOuCircundarTexto(event)" id="Yurei"
-                        unselectable="on">Yurei</h4>
-                    <h4 class="block texto-interativo" onclick="riscarOuCircundarTexto(event)" id="Hantu"
-                        unselectable="on">Hantu</h4>
-                    <h4 class="block texto-interativo" onclick="riscarOuCircundarTexto(event)" id="Onryo"
-                        unselectable="on">Onryo</h4>
-                    <h4 class="block texto-interativo" onclick="riscarOuCircundarTexto(event)" id="Obake"
-                        unselectable="on">Obake</h4>
-                    <h4 class="block texto-interativo" onclick="riscarOuCircundarTexto(event)" id="Deogen"
-                        unselectable="on">Deogen</h4>
+                <div>
+                    <input data-checkbox-group="2" class="form-check-input custom-checkbox" type="checkbox"
+                        data-textos-alvo="Spirit Poltergeist Mare Demon Youkai Myling Raiju Moroi Wraith Banshee Revenant Yurei Hantu Onryo Deogen Phantom Jinn Shade Oni Goryo TheTwins Thaye">
+                    <label class="form-check-label block">
+                        <h3>Impressão digital de 6 dedos?</h3>
+                    </label>
                 </div>
-                <div class="column-container">
-                    <h4 class="block texto-interativo" onclick="riscarOuCircundarTexto(event)" id="Phantom">Phantom</h4>
-                    <h4 class="block texto-interativo" onclick="riscarOuCircundarTexto(event)" id="Jinn"
-                        unselectable="on">Jinn</h4>
-                    <h4 class="block texto-interativo" onclick="riscarOuCircundarTexto(event)" id="Shade"
-                        unselectable="on">Shade</h4>
-                    <h4 class="block texto-interativo" onclick="riscarOuCircundarTexto(event)" id="Oni"
-                        unselectable="on">Oni</h4>
-                    <h4 class="block texto-interativo" onclick="riscarOuCircundarTexto(event)" id="Goryo"
-                        unselectable="on">Goryo</h4>
-                    <h4 class="block texto-interativo" onclick="riscarOuCircundarTexto(event)" id="TheTwins"
-                        unselectable="on">The Twins</h4>
-                    <h4 class="block texto-interativo" onclick="riscarOuCircundarTexto(event)" id="Mimico"
-                        unselectable="on">Mímico</h4>
-                    <h4 class="block texto-interativo" onclick="riscarOuCircundarTexto(event)" id="Thaye"
-                        unselectable="on">Thaye</h4>
+                <div>
+                    <input data-checkbox-group="3" class="form-check-input custom-checkbox" type="checkbox" data-textos-alvo="Jinn">
+                    <label class="form-check-label block">
+                        <h3>Desligou o quadro de luz?</h3>
+                    </label>
+                </div>
+                <div>
+                    <input data-checkbox-group="4" class="form-check-input custom-checkbox" type="checkbox"
+                        data-textos-alvo="Spirit Poltergeist Myling Raiju Wraith Banshee Revenant Yurei Hantu Deogen Phantom Jinn Shade Oni Goryo TheTwins Obake">
+                    <label class="form-check-label block">
+                        <h3>Atacou com mais de 50% de sanidade?</h3>
+                    </label>
+                </div>
+                <div>
+                    <input data-checkbox-group="5" class="form-check-input custom-checkbox" type="checkbox" data-textos-alvo="Onryo">
+                    <label class="form-check-label block">
+                        <h3>Atacou ou queimou crucifixo com a vela acesa?</h3>
+                    </label>
+                </div>
+                <div>
+                    <input data-checkbox-group="6" class="form-check-input custom-checkbox" type="checkbox" data-textos-alvo="Phantom">
+                    <label class="form-check-label block">
+                        <h3>Apareceu em foto?</h3>
+                    </label>
+                </div>
+                <div>
+                    <input data-checkbox-group="7" class="form-check-input custom-checkbox" type="checkbox" data-textos-alvo="Mare">
+                    <label class="form-check-label block">
+                        <h3>O fantasma ligou alguma coisa eletrônica?</h3>
+                    </label>
+                </div>
+                <div>
+                    <input data-checkbox-group="8" class="form-check-input custom-checkbox" type="checkbox"
+                        data-textos-alvo="Spirit Poltergeist Mare Demon Youkai Myling Raiju Moroi Wraith Banshee Revenant Hantu Onryo Deogen Phantom Jinn Shade Oni Goryo TheTwins Thaye Obake">
+                    <label class="form-check-label block">
+                        <h3>Abriu ou fechou uma porta por completo?</h3>
+                    </label>
+                </div>
+                <div>
+                    <input data-checkbox-group="9" class="form-check-input custom-checkbox" type="checkbox"
+                        data-textos-alvo="Spirit Poltergeist Mare Demon Youkai Myling Raiju Moroi Wraith Banshee Revenant Yurei Hantu Onryo Deogen Phantom Jinn Shade Oni Goryo TheTwins Thaye Obake">
+                    <label class="form-check-label block">
+                        <h3>Achou mais evidências do que permitido (uma delas sendo Orbe Fantasma)?</h3>
+                    </label>
+                </div>
+                <div>
+                    <input data-checkbox-group="10" class="form-check-input custom-checkbox" type="checkbox"
+                        data-textos-alvo="Spirit Poltergeist Mare Demon Youkai Myling Raiju Moroi Wraith Banshee Revenant Yurei Hantu Onryo Deogen Phantom Jinn Shade Oni Goryo TheTwins Thaye Obake">
+                    <label class="form-check-label block">
+                        <h3>Achou Orbe Fantasma em uma partida sem evidências?</h3>
+                    </label>
                 </div>
             </div>
         </div>
@@ -165,6 +273,8 @@
 </body>
 
 </html>
+
+<!-- Seu código HTML aqui -->
 
 <script>
     var lastClickTime = 0;
@@ -208,6 +318,16 @@
         checkboxes.forEach(function (checkbox) {
             if (checkbox.checked) {
                 var textosAlvo = checkbox.getAttribute('data-textos-alvo').split(' ');
+                var checkboxGroup = checkbox.getAttribute('data-checkbox-group');
+
+                checkboxes.forEach(function (otherCheckbox) {
+                    // Verifica se o checkbox pertence ao mesmo grupo, mas não é o próprio checkbox clicado
+                    if (otherCheckbox !== checkbox && otherCheckbox.getAttribute('data-checkbox-group') === checkboxGroup) {
+                        otherCheckbox.disabled = checkbox.checked;
+                        otherCheckbox.checked = false;
+                    }
+                });
+
                 textosAlvo.forEach(function (textoAlvo) {
                     var alvo = document.getElementById(textoAlvo);
                     if (alvo) {
@@ -238,6 +358,16 @@
         checkboxes.forEach(function (checkbox) {
             checkbox.addEventListener('change', function () {
                 var textosAlvo = this.getAttribute('data-textos-alvo').split(' ');
+                var checkboxGroup = this.getAttribute('data-checkbox-group');
+
+                checkboxes.forEach(function (otherCheckbox) {
+                    // Verifica se o checkbox pertence ao mesmo grupo, mas não é o próprio checkbox clicado
+                    if (otherCheckbox !== checkbox && otherCheckbox.getAttribute('data-checkbox-group') === checkboxGroup) {
+                        otherCheckbox.disabled = checkbox.checked;
+                        otherCheckbox.checked = false;
+                    }
+                });
+
                 textosAlvo.forEach(function (textoAlvo) {
                     var alvo = document.getElementById(textoAlvo);
                     if (alvo) {

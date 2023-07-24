@@ -37,3 +37,27 @@
     width: 27px;
     height: 27px;
 }
+
+.custom-checkbox2 {
+    width: 27px;
+    height: 27px;
+}
+
+.custom-checkbox:checked {
+    background-color: #198754; /* Cor verde quando marcado */
+    border-color: #198754; /* Cor da borda do checkbox quando marcado */
+}
+
+.custom-checkbox2:checked {
+    background-color: #cc0d0d; /* Cor verde quando marcado */
+    border-color: #cc0d0d; /* Cor da borda do checkbox quando marcado */
+}
+
+/* Remover a sombra de foco */
+.custom-checkbox:focus {
+    box-shadow: none;
+}
+
+.custom-checkbox2:focus {
+    box-shadow: none;
+}
